@@ -1,0 +1,214 @@
+/* Stile generale */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+/* Barra del menu */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.navbar .menu {
+    display: flex;
+    gap: 10px;
+}
+
+.navbar .menu button {
+    padding: 10px 15px;
+    background-color: #555;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.navbar .menu button:hover {
+    background-color: #777;
+}
+
+/* Contenuti */
+.content {
+    padding: 20px;
+}
+
+.section {
+    display: none;
+    max-width: 1200px; /* Aumentato per contenere tutte le card */
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.section.active {
+    display: block;
+}
+
+h2 {
+    color: #333;
+}
+
+p {
+    font-size: 18px;
+    color: #555;
+}
+
+#recensioni {
+    text-align: center;
+}
+
+.review-box {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 400px;
+    text-align: left;
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    background-color: #3498db;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.reviewer-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.media-placeholder img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.review-description {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Stile delle card del team */
+.team-container {
+    display: flex;
+    justify-content: space-between; /* Distribuisce le card uniformemente */
+    margin-top: 20px;
+}
+
+.team-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: calc(23% - 10px); /* Larghezza ridotta per renderle più strette */
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.card-header .avatar {
+    width: 50px;
+    height: 50px;
+    background-color: #007bff;
+    color: white;
+    font-size: 20px; /* Font ridotto per l'avatar */
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.card-title {
+    font-size: 16px; /* Testo titolo ridotto */
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.card-description {
+    font-size: 12px; /* Testo descrizione ridotto */
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Stile per il contenitore del video */
+.video-box {
+    position: relative;
+    width: 100%;
+    max-width: 100%; /* Adatta il video alla larghezza del contenitore */
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 8px; /* Angoli arrotondati */
+}
+
+/* Stile per il video */
+.video-box video {
+    width: 100%; /* Il video occupa tutta la larghezza del contenitore */
+    height: auto; /* Mantiene le proporzioni */
+    display: block;
+}
+
+/* Stile per il contenitore del video */
+.video-box {
+    position: relative;
+    width: 100%;
+    max-width: 800px; /* Larghezza massima del video */
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 8px; /* Angoli arrotondati */
+}
+
+/* Stile per l'iframe */
+.video-box iframe {
+    width: 100%; /* L'iframe occupa tutta la larghezza del contenitore */
+    height: 500px; /* Altezza fissa (puoi modificarla) */
+    display: block;
+}
