@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PCXtreme - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Barra del menu -->
+    <header class="navbar">
+        <div class="logo">PCXtreme</div>
+        <nav class="menu">
+            <button onclick="showSection('home')">Home</button>
+            <button onclick="showSection('chi-siamo')">Chi Siamo</button>
+            <button onclick="showSection('servizi')">Servizi</button>
+            <button onclick="showSection('recensioni')">Recensioni</button>
+            <button onclick="showSection('contatti')">Assistenza</button>
+        </nav>
+    </header>
+
+    <!-- Contenuti -->
+    <main class="content">
+        <section id="home" class="section active">
+            <h2>Benvenuto su PCXtreme</h2>
+            <p>La tua destinazione per computer di alta qualità e servizi personalizzati.</p>
+
+            <!-- Video in loop -->
+            <div class="video-box">
+            <iframe 
+    width="560" 
+    height="315" 
+    src="https://www.youtube.com/watch?v=kt2D7xl06mk" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+</iframe>
+        </section>
+
+        <section id="chi-siamo" class="section">
+            <h2>Chi Siamo</h2>
+            <p>Siamo un'azienda specializzata nella vendita di PC e componenti informatici di alta qualità. La nostra missione è fornire soluzioni tecnologiche innovative e assistenza clienti eccellente.</p>
+            <div class="image-box">
+                <img src="https://placehold.co/800x400" alt="Immagine Chi Siamo">
+            </div>
+
+            <!-- Card Team -->
+            <div class="team-container">
+                <!-- Card 1 -->
+                <div class="team-card">
+                    <div class="card-header">
+                        <div class="avatar">N1</div>
+                        <div class="card-title">Nome 1</div>
+                    </div>
+                    <p class="card-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Descrizione placeholder.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="team-card">
+                    <div class="card-header">
+                        <div class="avatar">N2</div>
+                        <div class="card-title">Nome 2</div>
+                    </div>
+                    <p class="card-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Descrizione placeholder.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="team-card">
+                    <div class="card-header">
+                        <div class="avatar">N3</div>
+                        <div class="card-title">Nome 3</div>
+                    </div>
+                    <p class="card-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Descrizione placeholder.
+                    </p>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="team-card">
+                    <div class="card-header">
+                        <div class="avatar">N4</div>
+                        <div class="card-title">Nome 4</div>
+                    </div>
+                    <p class="card-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Descrizione placeholder.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="servizi" class="section">
+            <h2>Servizi</h2>
+            <p>Ecco alcuni dei servizi che offriamo:</p>
+            <ul>
+                <li>Vendita di PC assemblati su misura</li>
+                <li>Assistenza tecnica e riparazioni</li>
+                <li>Configurazione e installazione software</li>
+                <li>Consulenza per upgrade hardware</li>
+            </ul>
+            <div class="image-box">
+                <img src="https://placehold.co/800x400" alt="Immagine Servizi">
+            </div>
+        </section>
+
+        <section id="recensioni" class="section">
+            <h2>Recensioni</h2>
+
+            <!-- Recensione 1 -->
+            <div class="review-box">
+                <div class="review-header">
+                    <div class="avatar">T</div>
+                    <div class="reviewer-name">Tomas Eyasu</div>
+                </div>
+                <div class="media-placeholder">
+                    <img src="https://placehold.co/600x400" alt="Placeholder Foto">
+                </div>
+                <p class="review-description">
+                    Ottimo servizio! Il PC che mi hanno consigliato è perfetto per le mie esigenze.
+                </p>
+            </div>
+
+            <!-- Recensione 2 -->
+            <div class="review-box">
+                <div class="review-header">
+                    <div class="avatar">C</div>
+                    <div class="reviewer-name">Cristian Piazza</div>
+                </div>
+                <div class="media-placeholder">
+                    <img src="https://placehold.co/600x400" alt="Placeholder Foto">
+                </div>
+                <p class="review-description">
+                    Componenti di alta qualità e assistenza clienti eccellente!
+                </p>
+            </div>
+
+            <!-- Recensione 3 -->
+            <div class="review-box">
+                <div class="review-header">
+                    <div class="avatar">S</div>
+                    <div class="reviewer-name">Sofia Zurita</div>
+                </div>
+                <div class="media-placeholder">
+                    <img src="https://placehold.co/600x400" alt="Placeholder Foto">
+                </div>
+                <p class="review-description">
+                    Sono rimasta soddisfatta dell'acquisto, lo consiglio vivamente!
+                </p>
+            </div>
+        </section>
+
+        <section id="contatti" class="section">
+            <h2>Assistenza</h2>
+            <p>Puoi contattarci tramite i seguenti canali:</p>
+            <ul>
+                <li>Email: <a href="mailto:PCxtreme@gmail.com">PCxtreme@gmail.com</a></li>
+                <li>Telefono: <a href="tel:1234567890">1234567890</a></li>
+                <li>Indirizzo: Via Tecnologia, 42, 00100 Roma</li>
+            </ul>
+            <div class="image-box">
+                <img src="https://placehold.co/800x400" alt="Immagine Contatti">
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
